@@ -45,7 +45,7 @@ P_Pa = P_atm * 101325.0
 M_air = air_number_density_cm3(T_K, P_Pa)
 
 sim_hours = st.sidebar.number_input("Simulation duration (hours)", 1.0, 24.0, 10.0, 0.5)
-dt_s = st.sidebar.number_input("Time step (s)", 0.5, 120.0, 1.0, 0.5)
+dt_s = st.sidebar.number_input("Time step (s)", 0.5, 120.0, 10.0, 0.5)
 
 st.sidebar.markdown("### Grid for isopleths (log-scale axes)")
 RH_min = st.sidebar.number_input("RH min (ppb)", 0.1, 1000.0, 50.0, 0.1)
